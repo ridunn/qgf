@@ -32,7 +32,7 @@ from dedalus.extras.plot_tools import quad_mesh, pad_limits
 from dedalus.extras import flow_tools
 
 Lx, Ly, H  = 80, 40, 1
-Nx, Ny, Nz = 256, 128, 32
+Nx, Ny, Nz = 64, 32, 8
 
 if MPI.COMM_WORLD.size > (Nx // 2):
     mesh = [(Nx // 2), MPI.COMM_WORLD.size // (Nx // 2)]
